@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-main(){
+int main(){
 
 
     // Integer based fahr to cels conversion
@@ -39,5 +39,6 @@ main(){
         celsius = celsius + step;
     }
     
+    return(1);
 
 }

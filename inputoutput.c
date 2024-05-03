@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 
-main(){
+int main(){
 
     int c;
     c = getchar();
@@ -9,5 +9,7 @@ main(){
         putchar(c);
         c = getchar() ; 
     }
+
+    return(1);
 
 }
