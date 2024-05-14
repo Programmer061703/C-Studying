@@ -6,5 +6,10 @@ int main()
 {
     printf("Hello World\n");
 
-    return(1);
+    char str[] = "012345"; 
+
+    int num = atoi(str);
+
+
+    return(num);
 }
