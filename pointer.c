@@ -3,23 +3,34 @@
 #include<time.h>
 
 
+void swap( int *px, int *py){
+    int temp;
+    //* points to value of the memory address & gets the memory address 
+
+    printf("2 Mem addr X:%p\n Mem addr Y:%p\n",px,py);
+
+    temp = *px;
+    *px = *py;
+    *py = temp;
+    printf("3 Mem addr X:%p\n Mem addr Y:%p\n",px,py);
+}
+
+
 
 
 int main(){
 
-    clock_t begin = clock();
     int x = 1, y = 2, z[10];
 
-    int *ip;
+    printf("1 Mem addr X:%p\n Mem addr Y:%p\n",&x,&y);
+   swap(&x,&y);
 
-    ip = &x;
 
-    printf("Mem Addr: %p \n", (void*)ip);
+
+    printf("Value of X:%d\nValue of Y: %d", x,y);
+    
     //6422028
 
-    clock_t end = clock();
-    double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-
-    printf("%f",time_spent);
+    
 
 }
